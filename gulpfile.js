@@ -6,6 +6,12 @@ import concat from 'gulp-concat';
 import rename from 'gulp-rename';
 import del from 'del';
 import autoprefixer from 'gulp-autoprefixer';
+import ghPages from 'gulp-gh-pages';
+
+gulp.task('deploy', function () {
+    return gulp.src('./dist/**/*')
+        .pipe(ghPages());
+});
 
 
 export const clean = async () => {
