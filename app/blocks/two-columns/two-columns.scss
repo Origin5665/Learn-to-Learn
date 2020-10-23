@@ -1,0 +1,136 @@
+.two-columns {
+   padding-top: 100px;
+   padding-bottom: 100px;
+   width: 80%;
+   margin: 0 auto;
+   display: grid;
+   grid-template-columns: minmax(150px, 25%) 1fr;
+
+
+
+
+   &__main-text {
+      display: grid;
+      grid-template-rows: repeat(3, auto);
+      row-gap: 30px;
+      grid-column: 2/ -1;
+   }
+
+   @media screen and (max-width: 768px) {
+      &__main-text {
+         row-gap: 15px;
+      }
+   }
+
+   &__paragraph {
+      margin: 0;
+      font-size: 24px;
+      line-height: 36px;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-rendering: optimizeLegibility;
+   }
+
+   @media screen and (max-width: 1024px) {
+      &__paragraph {
+         font-size: 22px;
+         line-height: 34px;
+      }
+   }
+
+   @media screen and (max-width: 1024px) {
+      &__paragraph {
+         font-size: 17px;
+         line-height: 24px;
+      }
+   }
+
+   @media screen and (max-width: 478px) {
+      &__paragraph {
+         font-size: 16px;
+         line-height: 22px;
+      }
+   }
+
+   &__brief {
+      margin: 0;
+      max-width: 180px;
+      font-size: 18px;
+      line-height: 1.2;
+      color: $color-blue;
+   }
+
+   @media screen and (max-width: 1024px) {
+      &__brief {
+         max-width: 600px;
+         font-size: 26px;
+         line-height: 34px;
+      }
+   }
+
+   @media screen and (max-width: 478px) {
+      &__brief {
+
+         font-size: 22px;
+         line-height: 34px;
+      }
+   }
+
+   @media screen and (max-width: 370px) {
+      &__brief {
+
+         font-size: 16px;
+         line-height: 28px;
+      }
+   }
+
+
+   &__span-accent {
+      font-size: 24px;
+      line-height: 34px;
+      font-weight: bold;
+   }
+
+   @media screen and (max-width: 478px) {
+      &__span-accent {
+
+         font-size: 19px;
+         line-height: 22px;
+      }
+   }
+}
+
+@media screen and (max-width: 1024px) {
+   .two-columns {
+      grid-template-columns: none;
+      grid-template-rows: minmax(120px, 25%) 1fr;
+   }
+}
+
+@media screen and (max-width: 768px) {
+   .two-columns {
+      grid-template-columns: none;
+      grid-template-rows: minmax(50px, 25%) 1fr;
+      width: 90%;
+      padding-top: 30px;
+      padding-bottom: 30px;
+   }
+}
+
+@media screen and (max-width: 478px) {
+   .two-columns {
+
+      grid-template-rows: minmax(45px, 25%) 1fr;
+      width: 95%;
+      padding-top: 15px;
+      padding-bottom: 15px;
+   }
+}
+
+@media screen and (max-width: 478px) {
+   .two-columns {
+
+      grid-template-rows: minmax(35px, 25%) 1fr;
+
+   }
+}
