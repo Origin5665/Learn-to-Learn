@@ -5,6 +5,7 @@
   "description": "startkit with gulp",
   "main": "index.js",
   "dependencies": {
+    "gulp-gh-pages": "^0.5.4",
     "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
