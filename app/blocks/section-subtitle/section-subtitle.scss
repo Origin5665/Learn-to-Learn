@@ -4,3 +4,10 @@
    line-height: 34px;
    text-align: center;
 }
+
+@media screen and (max-width:768px) {
+   .section-subtitle {
+
+      font-size: 20px;
+   }
+}

@@ -1,0 +1,43 @@
+.feynman {
+   background: $color-gray;
+   position: relative;
+   height: 790px;
+}
+
+
+
+.feynman__title {
+   margin: 0;
+
+   max-width: 648px;
+   text-align: center;
+   font-size: 120px;
+   line-height: 1.15;
+   font-weight: bold;
+   z-index: 2;
+
+}
+
+.feynman__subtitle {
+   margin: 0;
+   font-size: 36px;
+   line-height: 51px;
+   text-align: center;
+   z-index: 2;
+
+}
+
+.feynman__wrapper {
+   display: grid;
+   justify-content: center;
+   row-gap: 70px;
+}
+
+.feynman__image {
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   z-index: 1;
+   width: 867px;
+   height: 637px;
+}

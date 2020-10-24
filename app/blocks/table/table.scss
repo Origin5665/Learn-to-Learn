@@ -6,6 +6,8 @@
    column-gap: 100px;
    justify-content: center;
    margin: 0 auto;
+
+
 }
 
 .card {
@@ -13,9 +15,10 @@
    justify-items: center;
 
    &__heading {
+      text-align: center;
       font-size: 24px;
       line-height: 34px;
-      padding-top: 43px;
+      padding-top: 30px;
       padding-bottom: 16px;
       margin: 0;
    }
@@ -23,19 +26,66 @@
    &__text {
       margin: 0;
       text-align: center;
-      font-size: 24px;
+      font-size: 18px;
       line-height: 1.15;
    }
 
-   &__image-container {
-      overflow: hidden;
-      // border-radius: 50%;
 
-   }
 
    &__image {
       width: 200px;
       height: 200px;
       border-radius: 50%;
+   }
+
+   @media screen and (max-width:1078px) {
+      &__image {
+         width: 160px;
+         height: 160px;
+      }
+   }
+
+   @media screen and (max-width:549px) {
+      &__image {
+         width: 200px;
+         height: 200px;
+      }
+   }
+
+}
+
+@media screen and (max-width:1078px) {
+   .table {
+      column-gap: 50px;
+   }
+}
+
+@media screen and (max-width:768px) {
+   .table {
+      row-gap: 40px;
+   }
+}
+
+@media screen and (max-width:610px) {
+   .table {
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+   }
+}
+
+@media screen and (max-width:500px) {
+   .table {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+   }
+}
+
+
+
+.wrapper-text {
+   padding-bottom: 60px;
+}
+
+@media screen and (max-width:768px) {
+   .wrapper-text {
+      padding-bottom: 30px;
    }
 }
