@@ -1,0 +1,93 @@
+@import './../../scss/vars';
+
+
+.footer {
+   background-color: #1F1F1F;
+
+   font-size: 1.12rem;
+   color: $color-white;
+
+
+
+   &__column-heading {
+      margin: 0 0 1.3rem 0;
+      font-weight: bold;
+      line-height: 1.9rem;
+
+      @media screen and (max-width:700px) {
+         margin-bottom: 1rem;
+      }
+
+   }
+
+   &__column-links {
+      margin: 0;
+      padding: 0;
+      display: grid;
+      gap: 0.5rem;
+      grid-template-rows: repeat(3, 1fr);
+      list-style-type: none;
+   }
+
+   &__column-link {
+      font-size: inherit;
+      text-decoration: none;
+      color: $color-white;
+      transition: ease-in-out .1s;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      column-gap: 0.65rem;
+
+      &:hover {
+         color: $color-gray;
+      }
+   }
+
+   &__columns {
+      min-height: 250px;
+      padding-top: 60px;
+      padding-bottom: 40px;
+      display: grid;
+      grid-template-columns: minmax(200px, 50%) 1fr;
+
+      @media screen and (max-width:700px) {
+         min-height: 230px;
+         grid-template-columns: none;
+         grid-template-rows: auto 1fr;
+         padding-top: 40px;
+         padding-bottom: 30px;
+      }
+   }
+
+   &__wrapper-column {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-items: end;
+
+      @media screen and (max-width:700px) {
+         grid-template-columns: none;
+         grid-template-rows: 1fr 1fr;
+         justify-items: start;
+         row-gap: 10px;
+      }
+
+
+   }
+
+   &__column_content-copyright {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+   }
+
+   &__author {
+      line-height: 1.5rem;
+
+   }
+
+   &__logo {
+      width: 165px;
+      height: 35px;
+   }
+
+}

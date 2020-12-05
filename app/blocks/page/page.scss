@@ -1,5 +1,7 @@
 .page {
-   max-width: 1440px;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+   text-rendering: optimizeLegibility;
    margin: 0 auto;
    font-family: 'Helvetica Neue', 'Arial', sans-serif;
 }

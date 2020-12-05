@@ -1,5 +1,5 @@
 .kaufman {
-   background: #000;
+   background: $color-black;
    color: #fff
 }
 
@@ -14,7 +14,7 @@
 .card-container {
    display: grid;
    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-
+   padding-bottom: 90px;
    justify-items: center;
    gap: 15px;
 }
