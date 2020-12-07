@@ -1,0 +1,33 @@
+.kaufman {
+   background: $color-black;
+   color: #fff;
+
+   &__card {
+      width: 200px;
+      height: 100%;
+      display: grid;
+      grid-template-rows: auto 1fr;
+      row-gap: 20px;
+   }
+
+   &__wrapper {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      padding-bottom: 90px;
+      justify-items: center;
+      gap: 15px;
+   }
+
+   &__card-subtitle {
+      margin: 0;
+      font-size: 1.1rem;
+      line-height: 1.2;
+      text-align: start;
+   }
+
+   &__card-title {
+      margin: 0;
+      font-size: 1.5rem;
+      line-height: 1.15;
+   }
+}

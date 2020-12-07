@@ -3,12 +3,10 @@
 
 .footer {
    background-color: #1F1F1F;
-
    font-size: 1.12rem;
    color: $color-white;
 
-
-
+   /* Heading */
    &__column-heading {
       margin: 0 0 1.3rem 0;
       font-weight: bold;
@@ -17,9 +15,9 @@
       @media screen and (max-width:700px) {
          margin-bottom: 1rem;
       }
-
    }
 
+   /* Links */
    &__column-links {
       margin: 0;
       padding: 0;
@@ -29,6 +27,7 @@
       list-style-type: none;
    }
 
+   /* link*/
    &__column-link {
       font-size: inherit;
       text-decoration: none;
@@ -43,6 +42,7 @@
       }
    }
 
+   /* columns */
    &__columns {
       min-height: 250px;
       padding-top: 60px;
@@ -59,6 +59,7 @@
       }
    }
 
+   /* wrapper column */
    &__wrapper-column {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -70,24 +71,23 @@
          justify-items: start;
          row-gap: 10px;
       }
-
-
    }
 
+   /* copyright */
    &__column_content-copyright {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
    }
 
+   /* author */
    &__author {
       line-height: 1.5rem;
-
    }
 
+   /* logo */
    &__logo {
       width: 165px;
       height: 35px;
    }
-
 }
